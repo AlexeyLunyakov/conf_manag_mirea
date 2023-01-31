@@ -1,0 +1,17 @@
+\documentclass[a4paper, 70pt]{article}
+
+\usepackage[english, russian]{babel}
+\usepackage[left=20mm, top=20mm, right=20mm, bottom=20mm]{geometry}
+\usepackage{amsmath}
+
+\begin{document}
+
+Задание 1. Реализация формулы на языке LaTeX\\
+\newline\\
+
+$\int_x^\infty \frac{\mathrm{d}t}{t(t^2+1)\log t} = \int_x^\infty \frac{1}{t\log t} (\sum\limits_{m}{t^{-2m}}){\mathrm{d}t} = \sum\limits_{m}\int_x^\infty \frac{t^{-2m}}{t\log t}\mathrm{d}t \stackrel{(u = t^{-2m})}{=} -\sum\limits_{m} \text{li}(x^{-2m}) $ \\
+\newline\\
+
+Задание выполнил Луняков Алексей, группа ИКБО-04-21
+
+\end{document}

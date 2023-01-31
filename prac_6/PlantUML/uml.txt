@@ -1,0 +1,42 @@
+@startuml
+
+skinparam responseMessageBelowArrow false
+skinparam monochrome true
+skinparam shadowing false
+
+skinparam sequence {
+ActorBorderColor black
+ActorBackgroundColor white
+}
+
+actor "Луняков А.А." as man
+database Piazza as db #white
+actor Преподаватель as man2
+Ы
+man2 -> db : Публикация задачи
+activate db
+db --> man2 : Задача опубликована
+deactivate db
+
+man -> db : Поиск задачи
+activate db
+db --> man : Получение задачи
+deactivate db
+
+man -> db : Публикация решения
+activate db
+db --> man : Решение опубликовано
+deactivate db
+
+man2 -> db : Поиск решений
+activate db   
+    db --> man2 : Решение найдено
+    man2 -> db : Публикация оценки
+db --> man2 : Оценка опубликована
+deactivate db
+
+man -> db : Проверка оценки
+activate db
+db --> man : Оценка получена
+deactivate db
+@enduml
