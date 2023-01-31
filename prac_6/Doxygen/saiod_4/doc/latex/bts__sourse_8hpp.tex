@@ -1,0 +1,248 @@
+\hypertarget{bts__sourse_8hpp}{}\doxysection{Файл C\+:/\+Users/\+Alex\+Lnv/source/repos/siaod\+\_\+4/saiod\+\_\+4/bts\+\_\+sourse.hpp}
+\label{bts__sourse_8hpp}\index{C:/Users/AlexLnv/source/repos/siaod\_4/saiod\_4/bts\_sourse.hpp@{C:/Users/AlexLnv/source/repos/siaod\_4/saiod\_4/bts\_sourse.hpp}}
+
+
+Source file describing the functions that can be used to interact with BTS.  
+
+
+{\ttfamily \#include \char`\"{}bts\+\_\+head.\+h\char`\"{}}\newline
+Граф включаемых заголовочных файлов для bts\+\_\+sourse.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{bts__sourse_8hpp__incl}
+\end{center}
+\end{figure}
+Граф файлов, в которые включается этот файл\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{bts__sourse_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{bts__sourse_8hpp_a3042233048ecf144d3b451c7b494ac89}{build\+Bin\+Tree}} (int val, \mbox{\hyperlink{struct_bin_tree}{Bin\+Tree}} $\ast$$\ast$new\+\_\+tree)
+\begin{DoxyCompactList}\small\item\em BTS construction function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{bts__sourse_8hpp_af9ba7783d3fba7bab387f7886a7d81d7}{print\+\_\+\+BT}} (\mbox{\hyperlink{struct_bin_tree}{Bin\+Tree}} $\ast$$\ast$Tree, int l)
+\begin{DoxyCompactList}\small\item\em BTS printing function. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{bts__sourse_8hpp_abd9773ca3a3fbd276000a6041aeb6307}{main\+\_\+summ}} (int tmp\+\_\+sum)
+\begin{DoxyCompactList}\small\item\em Auxiliary variable storage function. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{bts__sourse_8hpp_aad9b03133e03d17935569dbd667c8fba}{Reverse\+Bypass\+\_\+count}} (\mbox{\hyperlink{struct_bin_tree}{Bin\+Tree}} $\ast$Tree, int \&summa)
+\begin{DoxyCompactList}\small\item\em Function to calculate the sum of values in leaves using reverse tree traversal. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{bts__sourse_8hpp_ae452dc0ed5ba24ddfd4a9aac2c4b769e}{Leaf\+\_\+count}} (\mbox{\hyperlink{struct_bin_tree}{Bin\+Tree}} $\ast$Tree)
+\begin{DoxyCompactList}\small\item\em Function to calculate the number of leaves in a tree. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{bts__sourse_8hpp_a80ca44fc17c9eaf0739339c542dea2b5}{Node\+\_\+count}} (\mbox{\hyperlink{struct_bin_tree}{Bin\+Tree}} $\ast$Tree)
+\begin{DoxyCompactList}\small\item\em Function to calculate the number of nodes in a tree. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_bin_tree}{Bin\+Tree}} $\ast$ \mbox{\hyperlink{bts__sourse_8hpp_a1bd9943061673b5b3fab696eeb530119}{Max\+Value}} (\mbox{\hyperlink{struct_bin_tree}{Bin\+Tree}} $\ast$Tree)
+\begin{DoxyCompactList}\small\item\em Function for finding the maximum element of BTS. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{bts__sourse_8hpp_a604bd83200a602624c8dbcab70a67862}{Max\+Value\+\_\+del}} (\mbox{\hyperlink{struct_bin_tree}{Bin\+Tree}} $\ast$Tree, int key)
+\begin{DoxyCompactList}\small\item\em Function to remove the maximum element of BTS. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Source file describing the functions that can be used to interact with BTS. 
+
+
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{bts__sourse_8hpp_a3042233048ecf144d3b451c7b494ac89}\label{bts__sourse_8hpp_a3042233048ecf144d3b451c7b494ac89}} 
+\index{bts\_sourse.hpp@{bts\_sourse.hpp}!buildBinTree@{buildBinTree}}
+\index{buildBinTree@{buildBinTree}!bts\_sourse.hpp@{bts\_sourse.hpp}}
+\doxysubsubsection{\texorpdfstring{buildBinTree()}{buildBinTree()}}
+{\footnotesize\ttfamily void build\+Bin\+Tree (\begin{DoxyParamCaption}\item[{int}]{val,  }\item[{\mbox{\hyperlink{struct_bin_tree}{Bin\+Tree}} $\ast$$\ast$}]{new\+\_\+tree }\end{DoxyParamCaption})}
+
+
+
+BTS construction function. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em val} & Incoming parameter of new tree element \\
+\hline
+{\em new\+\_\+tree} & Incoming parameter of new tree branch\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Used in the \mbox{\hyperlink{saiod__4_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} function in \textcolor{keywordflow}{case}:}
+\DoxyCodeLine{...}
+\DoxyCodeLine{    \mbox{\hyperlink{bts__sourse_8hpp_a3042233048ecf144d3b451c7b494ac89}{buildBinTree}}(val, \&Tree);}
+\DoxyCodeLine{...}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{bts__sourse_8hpp_ae452dc0ed5ba24ddfd4a9aac2c4b769e}\label{bts__sourse_8hpp_ae452dc0ed5ba24ddfd4a9aac2c4b769e}} 
+\index{bts\_sourse.hpp@{bts\_sourse.hpp}!Leaf\_count@{Leaf\_count}}
+\index{Leaf\_count@{Leaf\_count}!bts\_sourse.hpp@{bts\_sourse.hpp}}
+\doxysubsubsection{\texorpdfstring{Leaf\_count()}{Leaf\_count()}}
+{\footnotesize\ttfamily int Leaf\+\_\+count (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_bin_tree}{Bin\+Tree}} $\ast$}]{Tree }\end{DoxyParamCaption})}
+
+
+
+Function to calculate the number of leaves in a tree. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em Tree} & Incoming parameter of new tree branch\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Used in the \mbox{\hyperlink{saiod__4_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} function in \textcolor{keywordflow}{case}:}
+\DoxyCodeLine{...}
+\DoxyCodeLine{int b = \mbox{\hyperlink{bts__sourse_8hpp_ae452dc0ed5ba24ddfd4a9aac2c4b769e}{Leaf\_count}}(Tree);}
+\DoxyCodeLine{cout << b << endl;}
+\DoxyCodeLine{...}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{bts__sourse_8hpp_abd9773ca3a3fbd276000a6041aeb6307}\label{bts__sourse_8hpp_abd9773ca3a3fbd276000a6041aeb6307}} 
+\index{bts\_sourse.hpp@{bts\_sourse.hpp}!main\_summ@{main\_summ}}
+\index{main\_summ@{main\_summ}!bts\_sourse.hpp@{bts\_sourse.hpp}}
+\doxysubsubsection{\texorpdfstring{main\_summ()}{main\_summ()}}
+{\footnotesize\ttfamily int main\+\_\+summ (\begin{DoxyParamCaption}\item[{int}]{tmp\+\_\+sum }\end{DoxyParamCaption})}
+
+
+
+Auxiliary variable storage function. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em tmp\+\_\+sum} & Incoming parameter of saved amount\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Used in \mbox{\hyperlink{bts__sourse_8hpp_aad9b03133e03d17935569dbd667c8fba}{ReverseBypass\_count}} function}
+\DoxyCodeLine{...}
+\DoxyCodeLine{summa = \mbox{\hyperlink{bts__sourse_8hpp_abd9773ca3a3fbd276000a6041aeb6307}{main\_summ}}(summa+a);}
+\DoxyCodeLine{...}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{bts__sourse_8hpp_a1bd9943061673b5b3fab696eeb530119}\label{bts__sourse_8hpp_a1bd9943061673b5b3fab696eeb530119}} 
+\index{bts\_sourse.hpp@{bts\_sourse.hpp}!MaxValue@{MaxValue}}
+\index{MaxValue@{MaxValue}!bts\_sourse.hpp@{bts\_sourse.hpp}}
+\doxysubsubsection{\texorpdfstring{MaxValue()}{MaxValue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_bin_tree}{Bin\+Tree}} $\ast$ Max\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_bin_tree}{Bin\+Tree}} $\ast$}]{Tree }\end{DoxyParamCaption})}
+
+
+
+Function for finding the maximum element of BTS. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em Tree} & Incoming parameter of new tree branch\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Used in the \mbox{\hyperlink{saiod__4_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} function in \textcolor{keywordflow}{case}:}
+\DoxyCodeLine{...}
+\DoxyCodeLine{BinTree* max = \mbox{\hyperlink{bts__sourse_8hpp_a1bd9943061673b5b3fab696eeb530119}{MaxValue}}(Tree);}
+\DoxyCodeLine{\textcolor{keywordtype}{int} key = max-\/>value;}
+\DoxyCodeLine{...}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{bts__sourse_8hpp_a604bd83200a602624c8dbcab70a67862}\label{bts__sourse_8hpp_a604bd83200a602624c8dbcab70a67862}} 
+\index{bts\_sourse.hpp@{bts\_sourse.hpp}!MaxValue\_del@{MaxValue\_del}}
+\index{MaxValue\_del@{MaxValue\_del}!bts\_sourse.hpp@{bts\_sourse.hpp}}
+\doxysubsubsection{\texorpdfstring{MaxValue\_del()}{MaxValue\_del()}}
+{\footnotesize\ttfamily void Max\+Value\+\_\+del (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_bin_tree}{Bin\+Tree}} $\ast$}]{Tree,  }\item[{int}]{key }\end{DoxyParamCaption})}
+
+
+
+Function to remove the maximum element of BTS. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em Tree} & Incoming parameter of new tree branch \\
+\hline
+{\em key} & Incoming parameter of the value to be removed from the tree\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Used in the \mbox{\hyperlink{saiod__4_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} function in \textcolor{keywordflow}{case}:}
+\DoxyCodeLine{...}
+\DoxyCodeLine{MaxValue\_del(Tree, key);}
+\DoxyCodeLine{...}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{bts__sourse_8hpp_a80ca44fc17c9eaf0739339c542dea2b5}\label{bts__sourse_8hpp_a80ca44fc17c9eaf0739339c542dea2b5}} 
+\index{bts\_sourse.hpp@{bts\_sourse.hpp}!Node\_count@{Node\_count}}
+\index{Node\_count@{Node\_count}!bts\_sourse.hpp@{bts\_sourse.hpp}}
+\doxysubsubsection{\texorpdfstring{Node\_count()}{Node\_count()}}
+{\footnotesize\ttfamily int Node\+\_\+count (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_bin_tree}{Bin\+Tree}} $\ast$}]{Tree }\end{DoxyParamCaption})}
+
+
+
+Function to calculate the number of nodes in a tree. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em Tree} & Incoming parameter of new tree branch\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Used in the \mbox{\hyperlink{saiod__4_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} function in \textcolor{keywordflow}{case}:}
+\DoxyCodeLine{...}
+\DoxyCodeLine{int a = \mbox{\hyperlink{bts__sourse_8hpp_a80ca44fc17c9eaf0739339c542dea2b5}{Node\_count}}(Tree);}
+\DoxyCodeLine{cout << a << \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{...}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{bts__sourse_8hpp_af9ba7783d3fba7bab387f7886a7d81d7}\label{bts__sourse_8hpp_af9ba7783d3fba7bab387f7886a7d81d7}} 
+\index{bts\_sourse.hpp@{bts\_sourse.hpp}!print\_BT@{print\_BT}}
+\index{print\_BT@{print\_BT}!bts\_sourse.hpp@{bts\_sourse.hpp}}
+\doxysubsubsection{\texorpdfstring{print\_BT()}{print\_BT()}}
+{\footnotesize\ttfamily void print\+\_\+\+BT (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_bin_tree}{Bin\+Tree}} $\ast$$\ast$}]{Tree,  }\item[{int}]{l }\end{DoxyParamCaption})}
+
+
+
+BTS printing function. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em Tree} & Incoming parameter of new tree branch \\
+\hline
+{\em l} & Incoming parameter of the level of element on tree\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Used in the \mbox{\hyperlink{saiod__4_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} function in \textcolor{keywordflow}{case}:}
+\DoxyCodeLine{...}
+\DoxyCodeLine{print\_BT(\&Tree, 0);}
+\DoxyCodeLine{...}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{bts__sourse_8hpp_aad9b03133e03d17935569dbd667c8fba}\label{bts__sourse_8hpp_aad9b03133e03d17935569dbd667c8fba}} 
+\index{bts\_sourse.hpp@{bts\_sourse.hpp}!ReverseBypass\_count@{ReverseBypass\_count}}
+\index{ReverseBypass\_count@{ReverseBypass\_count}!bts\_sourse.hpp@{bts\_sourse.hpp}}
+\doxysubsubsection{\texorpdfstring{ReverseBypass\_count()}{ReverseBypass\_count()}}
+{\footnotesize\ttfamily int Reverse\+Bypass\+\_\+count (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_bin_tree}{Bin\+Tree}} $\ast$}]{Tree,  }\item[{int \&}]{summa }\end{DoxyParamCaption})}
+
+
+
+Function to calculate the sum of values in leaves using reverse tree traversal. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em Tree} & Incoming parameter of new tree branch \\
+\hline
+{\em summa} & Incoming parameter of the calculated amount\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Used in the \mbox{\hyperlink{saiod__4_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} function in \textcolor{keywordflow}{case}:}
+\DoxyCodeLine{...}
+\DoxyCodeLine{int summa = 0;}
+\DoxyCodeLine{cout << \mbox{\hyperlink{bts__sourse_8hpp_aad9b03133e03d17935569dbd667c8fba}{ReverseBypass\_count}}(Tree, summa);}
+\DoxyCodeLine{...}
+
+\end{DoxyCode}
+ 

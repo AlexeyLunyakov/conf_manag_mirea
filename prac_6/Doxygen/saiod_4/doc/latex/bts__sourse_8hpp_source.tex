@@ -1,0 +1,85 @@
+\hypertarget{bts__sourse_8hpp_source}{}\doxysection{C\+:/\+Users/\+Alex\+Lnv/source/repos/siaod\+\_\+4/saiod\+\_\+4/bts\+\_\+sourse.hpp}
+\mbox{\hyperlink{bts__sourse_8hpp}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{bts__head_8h}{bts\_head.h}}"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{comment}{// Rules for creating BTS:}}
+\DoxyCodeLine{8 \textcolor{comment}{// all nodes of the node's left subtree have data key values less than the data key value of the node itself}}
+\DoxyCodeLine{9 \textcolor{comment}{// for all nodes of the right subtree of the node, the values of the data keys are greater than or equal to the value of the data key of the node itself}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{25 \textcolor{keywordtype}{void} \mbox{\hyperlink{bts__sourse_8hpp_a3042233048ecf144d3b451c7b494ac89}{buildBinTree}}(\textcolor{keywordtype}{int} val, \mbox{\hyperlink{struct_bin_tree}{BinTree}}** new\_tree) \{}
+\DoxyCodeLine{26     \textcolor{keywordflow}{if} ((*new\_tree) == \textcolor{keyword}{nullptr}) \{}
+\DoxyCodeLine{27         (*new\_tree) = \textcolor{keyword}{new} \mbox{\hyperlink{struct_bin_tree}{BinTree}};}
+\DoxyCodeLine{28         \textcolor{comment}{//Putting a new value into the allocated space}}
+\DoxyCodeLine{29         (*new\_tree)-\/>\mbox{\hyperlink{struct_bin_tree_aec5735542d719d0a3693fb76d49daaa8}{value}} = val;}
+\DoxyCodeLine{30         \textcolor{comment}{//Create empty branches from the current element}}
+\DoxyCodeLine{31         (*new\_tree)-\/>left = (*new\_tree)-\/>right = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{32         \textcolor{keywordflow}{return};}
+\DoxyCodeLine{33     \}}
+\DoxyCodeLine{34     \textcolor{keywordflow}{if} (val > (*new\_tree)-\/>value) \{}
+\DoxyCodeLine{35         \mbox{\hyperlink{bts__sourse_8hpp_a3042233048ecf144d3b451c7b494ac89}{buildBinTree}}(val, \&(*new\_tree)-\/>right); \textcolor{comment}{//If the argument is greater than the current element, push it to the right}}
+\DoxyCodeLine{36     \}}
+\DoxyCodeLine{37     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{38         \mbox{\hyperlink{bts__sourse_8hpp_a3042233048ecf144d3b451c7b494ac89}{buildBinTree}}(val, \&(*new\_tree)-\/>left); \textcolor{comment}{//Else put it to the left}}
+\DoxyCodeLine{39     \}}
+\DoxyCodeLine{40 \}}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{56 \textcolor{keywordtype}{void} \mbox{\hyperlink{bts__sourse_8hpp_af9ba7783d3fba7bab387f7886a7d81d7}{print\_BT}}(\mbox{\hyperlink{struct_bin_tree}{BinTree}}** Tree, \textcolor{keywordtype}{int} l) \{}
+\DoxyCodeLine{57     \textcolor{keywordtype}{int} i;}
+\DoxyCodeLine{58     \textcolor{keywordflow}{if} (*Tree != \textcolor{keyword}{nullptr}) \{}
+\DoxyCodeLine{59         \textcolor{comment}{// Calling this function from the right subtree of the current}}
+\DoxyCodeLine{60         \mbox{\hyperlink{bts__sourse_8hpp_af9ba7783d3fba7bab387f7886a7d81d7}{print\_BT}}(\&((**Tree).right), l + 1);}
+\DoxyCodeLine{61         \textcolor{comment}{// Indentation increases depending on the level of the element in the tree}}
+\DoxyCodeLine{62         \textcolor{keywordflow}{for} (i = 1; i <= l; i++) cout << \textcolor{stringliteral}{"{}   "{}};}
+\DoxyCodeLine{63         cout << (**Tree).value << endl;}
+\DoxyCodeLine{64         \textcolor{comment}{// Calling this function from the left subtree of the current}}
+\DoxyCodeLine{65         \mbox{\hyperlink{bts__sourse_8hpp_af9ba7783d3fba7bab387f7886a7d81d7}{print\_BT}}(\&((**Tree).left), l + 1);}
+\DoxyCodeLine{66     \}}
+\DoxyCodeLine{67 \}}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{82 \textcolor{keywordtype}{int} \mbox{\hyperlink{bts__sourse_8hpp_abd9773ca3a3fbd276000a6041aeb6307}{main\_summ}}(\textcolor{keywordtype}{int} tmp\_sum) \{}
+\DoxyCodeLine{83     \textcolor{keywordflow}{return} tmp\_sum;}
+\DoxyCodeLine{84 \}}
+\DoxyCodeLine{85 }
+\DoxyCodeLine{101 \textcolor{keywordtype}{int} \mbox{\hyperlink{bts__sourse_8hpp_aad9b03133e03d17935569dbd667c8fba}{ReverseBypass\_count}}(\mbox{\hyperlink{struct_bin_tree}{BinTree}}* Tree, \textcolor{keywordtype}{int}\& summa) \{}
+\DoxyCodeLine{102     \textcolor{keywordflow}{if} (Tree != \textcolor{keyword}{nullptr}) \{}
+\DoxyCodeLine{103         \mbox{\hyperlink{bts__sourse_8hpp_aad9b03133e03d17935569dbd667c8fba}{ReverseBypass\_count}}(Tree-\/>\mbox{\hyperlink{struct_bin_tree_a2d58ebfa880daae7744565d0d8051c85}{left}}, summa);}
+\DoxyCodeLine{104         \mbox{\hyperlink{bts__sourse_8hpp_aad9b03133e03d17935569dbd667c8fba}{ReverseBypass\_count}}(Tree-\/>\mbox{\hyperlink{struct_bin_tree_a0e4176b4e20697275c7bad76155f0424}{right}}, summa);}
+\DoxyCodeLine{105         \textcolor{keywordtype}{int} a = Tree-\/>\mbox{\hyperlink{struct_bin_tree_aec5735542d719d0a3693fb76d49daaa8}{value}};}
+\DoxyCodeLine{106         summa = \mbox{\hyperlink{bts__sourse_8hpp_abd9773ca3a3fbd276000a6041aeb6307}{main\_summ}}(summa+a);}
+\DoxyCodeLine{107         \textcolor{keywordflow}{return} summa;}
+\DoxyCodeLine{108     \}}
+\DoxyCodeLine{109 \}   }
+\DoxyCodeLine{110 }
+\DoxyCodeLine{125 \textcolor{keywordtype}{int} \mbox{\hyperlink{bts__sourse_8hpp_ae452dc0ed5ba24ddfd4a9aac2c4b769e}{Leaf\_count}}(\mbox{\hyperlink{struct_bin_tree}{BinTree}}* Tree) \{}
+\DoxyCodeLine{126     \textcolor{keywordflow}{if} (!Tree) \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{127     \textcolor{keywordflow}{if} (!Tree-\/>\mbox{\hyperlink{struct_bin_tree_a2d58ebfa880daae7744565d0d8051c85}{left}} \&\& !Tree-\/>\mbox{\hyperlink{struct_bin_tree_a0e4176b4e20697275c7bad76155f0424}{right}})}
+\DoxyCodeLine{128         \textcolor{keywordflow}{return} 1;}
+\DoxyCodeLine{129     \textcolor{keywordflow}{return}  \mbox{\hyperlink{bts__sourse_8hpp_ae452dc0ed5ba24ddfd4a9aac2c4b769e}{Leaf\_count}}(Tree-\/>\mbox{\hyperlink{struct_bin_tree_a2d58ebfa880daae7744565d0d8051c85}{left}}) + \mbox{\hyperlink{bts__sourse_8hpp_ae452dc0ed5ba24ddfd4a9aac2c4b769e}{Leaf\_count}}(Tree-\/>\mbox{\hyperlink{struct_bin_tree_a0e4176b4e20697275c7bad76155f0424}{right}});}
+\DoxyCodeLine{130 \}}
+\DoxyCodeLine{131 }
+\DoxyCodeLine{146 \textcolor{keywordtype}{int} \mbox{\hyperlink{bts__sourse_8hpp_a80ca44fc17c9eaf0739339c542dea2b5}{Node\_count}}(\mbox{\hyperlink{struct_bin_tree}{BinTree}}* Tree) \{}
+\DoxyCodeLine{147     \textcolor{keywordflow}{if} (Tree == \textcolor{keyword}{nullptr}) \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{148     \textcolor{keywordflow}{return} \mbox{\hyperlink{bts__sourse_8hpp_a80ca44fc17c9eaf0739339c542dea2b5}{Node\_count}}(Tree-\/>\mbox{\hyperlink{struct_bin_tree_a2d58ebfa880daae7744565d0d8051c85}{left}}) + 1 + \mbox{\hyperlink{bts__sourse_8hpp_a80ca44fc17c9eaf0739339c542dea2b5}{Node\_count}}(Tree-\/>\mbox{\hyperlink{struct_bin_tree_a0e4176b4e20697275c7bad76155f0424}{right}});}
+\DoxyCodeLine{149 \}}
+\DoxyCodeLine{150 }
+\DoxyCodeLine{165 \mbox{\hyperlink{struct_bin_tree}{BinTree}}* \mbox{\hyperlink{bts__sourse_8hpp_a1bd9943061673b5b3fab696eeb530119}{MaxValue}}(\mbox{\hyperlink{struct_bin_tree}{BinTree}}* Tree) \{}
+\DoxyCodeLine{166     \textcolor{keywordflow}{if} (Tree-\/>\mbox{\hyperlink{struct_bin_tree_a0e4176b4e20697275c7bad76155f0424}{right}} != \textcolor{keyword}{nullptr}) \{}
+\DoxyCodeLine{167         \textcolor{keywordflow}{return}  \mbox{\hyperlink{bts__sourse_8hpp_a1bd9943061673b5b3fab696eeb530119}{MaxValue}}(Tree-\/>\mbox{\hyperlink{struct_bin_tree_a0e4176b4e20697275c7bad76155f0424}{right}});}
+\DoxyCodeLine{168     \}}
+\DoxyCodeLine{169     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{170         \textcolor{keywordflow}{return} Tree;}
+\DoxyCodeLine{171     \}}
+\DoxyCodeLine{172 \}}
+\DoxyCodeLine{173 }
+\DoxyCodeLine{188 \textcolor{keywordtype}{void} \mbox{\hyperlink{bts__sourse_8hpp_a604bd83200a602624c8dbcab70a67862}{MaxValue\_del}}(\mbox{\hyperlink{struct_bin_tree}{BinTree}}* Tree, \textcolor{keywordtype}{int} key) \{}
+\DoxyCodeLine{189     \textcolor{keywordflow}{if} (Tree-\/>\mbox{\hyperlink{struct_bin_tree_a0e4176b4e20697275c7bad76155f0424}{right}}-\/>\mbox{\hyperlink{struct_bin_tree_aec5735542d719d0a3693fb76d49daaa8}{value}} != key) \{}
+\DoxyCodeLine{190         \mbox{\hyperlink{bts__sourse_8hpp_a604bd83200a602624c8dbcab70a67862}{MaxValue\_del}}(Tree-\/>\mbox{\hyperlink{struct_bin_tree_a0e4176b4e20697275c7bad76155f0424}{right}}, key);}
+\DoxyCodeLine{191     \}}
+\DoxyCodeLine{192     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{193         Tree-\/>\mbox{\hyperlink{struct_bin_tree_a0e4176b4e20697275c7bad76155f0424}{right}} = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{194     \}}
+\DoxyCodeLine{195 \}}
+
+\end{DoxyCode}

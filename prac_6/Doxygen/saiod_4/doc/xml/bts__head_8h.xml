@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="ru">
+  <compounddef id="bts__head_8h" kind="file" language="C++">
+    <compoundname>bts_head.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">Windows.h</includes>
+    <includes local="no">conio.h</includes>
+    <includes local="no">cmath</includes>
+    <includedby refid="bts__sourse_8hpp" local="yes">C:/Users/AlexLnv/source/repos/siaod_4/saiod_4/bts_sourse.hpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/AlexLnv/source/repos/siaod_4/saiod_4/bts_head.h</label>
+        <link refid="bts__head_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Windows.h</label>
+      </node>
+      <node id="5">
+        <label>cmath</label>
+      </node>
+      <node id="4">
+        <label>conio.h</label>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>C:/Users/AlexLnv/source/repos/siaod_4/saiod_4/bts_head.h</label>
+        <link refid="bts__head_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>C:/Users/AlexLnv/source/repos/siaod_4/saiod_4/bts_sourse.hpp</label>
+        <link refid="bts__sourse_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>C:/Users/AlexLnv/source/repos/siaod_4/saiod_4/saiod_4.cpp</label>
+        <link refid="saiod__4_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_bin_tree" prot="public">BinTree</innerclass>
+    <innernamespace refid="namespacestd">std</innernamespace>
+    <briefdescription>
+<para>Header file describing the structure of a binary tree. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SIAOD_4_BTS_HEAD_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SIAOD_4_BTS_HEAD_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Windows.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;conio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="struct_bin_tree" refkind="compound"><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_bin_tree" kindref="compound">BinTree</ref><sp/>{</highlight></codeline>
+<codeline lineno="19" refid="struct_bin_tree_1aec5735542d719d0a3693fb76d49daaa8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_bin_tree_1aec5735542d719d0a3693fb76d49daaa8" kindref="member">value</ref>;</highlight></codeline>
+<codeline lineno="21" refid="struct_bin_tree_1a2d58ebfa880daae7744565d0d8051c85" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_bin_tree" kindref="compound">BinTree</ref>*<sp/><ref refid="struct_bin_tree_1a2d58ebfa880daae7744565d0d8051c85" kindref="member">left</ref>;</highlight></codeline>
+<codeline lineno="23" refid="struct_bin_tree_1a0e4176b4e20697275c7bad76155f0424" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_bin_tree" kindref="compound">BinTree</ref>*<sp/><ref refid="struct_bin_tree_1a0e4176b4e20697275c7bad76155f0424" kindref="member">right</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//SIAOD_4_BTS_HEAD_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/AlexLnv/source/repos/siaod_4/saiod_4/bts_head.h"/>
+  </compounddef>
+</doxygen>

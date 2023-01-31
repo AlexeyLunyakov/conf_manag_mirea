@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.5" xml:lang="ru">
+  <compound refid="struct_bin_tree" kind="struct"><name>BinTree</name>
+    <member refid="struct_bin_tree_1aec5735542d719d0a3693fb76d49daaa8" kind="variable"><name>value</name></member>
+    <member refid="struct_bin_tree_1a2d58ebfa880daae7744565d0d8051c85" kind="variable"><name>left</name></member>
+    <member refid="struct_bin_tree_1a0e4176b4e20697275c7bad76155f0424" kind="variable"><name>right</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="bts__head_8h" kind="file"><name>bts_head.h</name>
+  </compound>
+  <compound refid="bts__main_8cpp" kind="file"><name>bts_main.cpp</name>
+  </compound>
+  <compound refid="bts__sourse_8cpp" kind="file"><name>bts_sourse.cpp</name>
+  </compound>
+  <compound refid="bts__sourse_8hpp" kind="file"><name>bts_sourse.hpp</name>
+    <member refid="bts__sourse_8hpp_1a3042233048ecf144d3b451c7b494ac89" kind="function"><name>buildBinTree</name></member>
+    <member refid="bts__sourse_8hpp_1af9ba7783d3fba7bab387f7886a7d81d7" kind="function"><name>print_BT</name></member>
+    <member refid="bts__sourse_8hpp_1abd9773ca3a3fbd276000a6041aeb6307" kind="function"><name>main_summ</name></member>
+    <member refid="bts__sourse_8hpp_1aad9b03133e03d17935569dbd667c8fba" kind="function"><name>ReverseBypass_count</name></member>
+    <member refid="bts__sourse_8hpp_1ae452dc0ed5ba24ddfd4a9aac2c4b769e" kind="function"><name>Leaf_count</name></member>
+    <member refid="bts__sourse_8hpp_1a80ca44fc17c9eaf0739339c542dea2b5" kind="function"><name>Node_count</name></member>
+    <member refid="bts__sourse_8hpp_1a1bd9943061673b5b3fab696eeb530119" kind="function"><name>MaxValue</name></member>
+    <member refid="bts__sourse_8hpp_1a604bd83200a602624c8dbcab70a67862" kind="function"><name>MaxValue_del</name></member>
+  </compound>
+  <compound refid="saiod__4_8cpp" kind="file"><name>saiod_4.cpp</name>
+    <member refid="saiod__4_8cpp_1a9bdaf36a1d8817b2e4101c3e559cf7c4" kind="function"><name>bts_menu</name></member>
+    <member refid="saiod__4_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+</doxygenindex>

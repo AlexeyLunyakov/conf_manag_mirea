@@ -1,0 +1,129 @@
+\hypertarget{saiod__4_8cpp}{}\doxysection{Файл C\+:/\+Users/\+Alex\+Lnv/source/repos/siaod\+\_\+4/saiod\+\_\+4/saiod\+\_\+4.cpp}
+\label{saiod__4_8cpp}\index{C:/Users/AlexLnv/source/repos/siaod\_4/saiod\_4/saiod\_4.cpp@{C:/Users/AlexLnv/source/repos/siaod\_4/saiod\_4/saiod\_4.cpp}}
+
+
+The source file with the main function.  
+
+
+{\ttfamily \#include \char`\"{}bts\+\_\+sourse.\+hpp\char`\"{}}\newline
+Граф включаемых заголовочных файлов для saiod\+\_\+4.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{saiod__4_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{saiod__4_8cpp_a9bdaf36a1d8817b2e4101c3e559cf7c4}{bts\+\_\+menu}} ()
+\begin{DoxyCompactList}\small\item\em Visual program control menu. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{saiod__4_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Main function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+The source file with the main function. 
+
+
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{saiod__4_8cpp_a9bdaf36a1d8817b2e4101c3e559cf7c4}\label{saiod__4_8cpp_a9bdaf36a1d8817b2e4101c3e559cf7c4}} 
+\index{saiod\_4.cpp@{saiod\_4.cpp}!bts\_menu@{bts\_menu}}
+\index{bts\_menu@{bts\_menu}!saiod\_4.cpp@{saiod\_4.cpp}}
+\doxysubsubsection{\texorpdfstring{bts\_menu()}{bts\_menu()}}
+{\footnotesize\ttfamily void bts\+\_\+menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Visual program control menu. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Used in the \mbox{\hyperlink{saiod__4_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} function:}
+\DoxyCodeLine{...}
+\DoxyCodeLine{    \mbox{\hyperlink{saiod__4_8cpp_a9bdaf36a1d8817b2e4101c3e559cf7c4}{bts\_menu}}();}
+\DoxyCodeLine{...}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{saiod__4_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{saiod__4_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{saiod\_4.cpp@{saiod\_4.cpp}!main@{main}}
+\index{main@{main}!saiod\_4.cpp@{saiod\_4.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Main function. 
+
+­­ Части работы с бинарным деревом\+: ­­
+
+¤ Создание дерева
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cout << \textcolor{stringliteral}{"{}To test a tree, you need to create it"{}} << endl;}
+\DoxyCodeLine{\textcolor{keywordflow}{while} (\_getch() != 27) \{}
+\DoxyCodeLine{    cout << \textcolor{stringliteral}{"{}Enter value (press ESC to complete entry) "{}};}
+\DoxyCodeLine{    cin >> val;}
+\DoxyCodeLine{    \mbox{\hyperlink{bts__sourse_8hpp_a3042233048ecf144d3b451c7b494ac89}{buildBinTree}}(val, \&Tree);}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{\mbox{\hyperlink{bts__sourse_8hpp_af9ba7783d3fba7bab387f7886a7d81d7}{print\_BT}}(\&Tree, 0);}
+
+\end{DoxyCode}
+
+
+¤ Сумма значений в листьях (обратный обход)
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cout << \textcolor{stringliteral}{"{}Sum of values: \(\backslash\)n"{}};}
+\DoxyCodeLine{\textcolor{keywordtype}{int} summa = 0;}
+\DoxyCodeLine{cout << \mbox{\hyperlink{bts__sourse_8hpp_aad9b03133e03d17935569dbd667c8fba}{ReverseBypass\_count}}(Tree, summa);}
+
+\end{DoxyCode}
+
+
+¤ Удаление максимального элемента.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cout << \textcolor{stringliteral}{"{}Maximum element: \(\backslash\)n"{}};}
+\DoxyCodeLine{\mbox{\hyperlink{struct_bin_tree}{BinTree}}* max = \mbox{\hyperlink{bts__sourse_8hpp_a1bd9943061673b5b3fab696eeb530119}{MaxValue}}(Tree);}
+\DoxyCodeLine{\textcolor{keywordtype}{int} key = max-\/>\mbox{\hyperlink{struct_bin_tree_aec5735542d719d0a3693fb76d49daaa8}{value}};}
+\DoxyCodeLine{cout << key << endl;}
+\DoxyCodeLine{cout << \textcolor{stringliteral}{"{}\(\backslash\)nFinal tree: \(\backslash\)n"{}};}
+\DoxyCodeLine{\mbox{\hyperlink{bts__sourse_8hpp_a604bd83200a602624c8dbcab70a67862}{MaxValue\_del}}(Tree, key);}
+\DoxyCodeLine{\mbox{\hyperlink{bts__sourse_8hpp_af9ba7783d3fba7bab387f7886a7d81d7}{print\_BT}}(\&Tree, 0);}
+
+\end{DoxyCode}
+
+
+¤ Вставка нового элемента.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cout << \textcolor{stringliteral}{"{}Adding a new element to the current tree: \(\backslash\)n"{}};}
+\DoxyCodeLine{\textcolor{keywordflow}{while} (\_getch() != 27) \{}
+\DoxyCodeLine{    cout << \textcolor{stringliteral}{"{}Enter value (press ESC to complete entry) "{}};}
+\DoxyCodeLine{    cin >> val;}
+\DoxyCodeLine{    \mbox{\hyperlink{bts__sourse_8hpp_a3042233048ecf144d3b451c7b494ac89}{buildBinTree}}(val, \&Tree);}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{cout << \textcolor{stringliteral}{"{}Final tree: \(\backslash\)n"{}};}
+\DoxyCodeLine{\mbox{\hyperlink{bts__sourse_8hpp_af9ba7783d3fba7bab387f7886a7d81d7}{print\_BT}}(\&Tree, 0);}
+
+\end{DoxyCode}
+
+
+¤ Определение количества узлов в поддереве.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cout << \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)nNumber of nodes in the tree -\/> "{}};}
+\DoxyCodeLine{\textcolor{keywordtype}{int} a = \mbox{\hyperlink{bts__sourse_8hpp_a80ca44fc17c9eaf0739339c542dea2b5}{Node\_count}}(Tree);}
+\DoxyCodeLine{cout << a << \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)nNumber of leaves in a tree -\/> "{}};}
+\DoxyCodeLine{\textcolor{keywordtype}{int} b = \mbox{\hyperlink{bts__sourse_8hpp_ae452dc0ed5ba24ddfd4a9aac2c4b769e}{Leaf\_count}}(Tree);}
+\DoxyCodeLine{cout << b << endl;}
+
+\end{DoxyCode}

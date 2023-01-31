@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="ru">
+  <compounddef id="struct_bin_tree" kind="struct" language="C++" prot="public">
+    <compoundname>BinTree</compoundname>
+    <includes refid="bts__head_8h" local="no">bts_head.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_bin_tree_1aec5735542d719d0a3693fb76d49daaa8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BinTree::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <qualifiedname>BinTree::value</qualifiedname>
+        <briefdescription>
+<para>Information part. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/AlexLnv/source/repos/siaod_4/saiod_4/bts_head.h" line="19" column="9" bodyfile="C:/Users/AlexLnv/source/repos/siaod_4/saiod_4/bts_head.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_bin_tree_1a2d58ebfa880daae7744565d0d8051c85" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_bin_tree" kindref="compound">BinTree</ref> *</type>
+        <definition>BinTree* BinTree::left</definition>
+        <argsstring></argsstring>
+        <name>left</name>
+        <qualifiedname>BinTree::left</qualifiedname>
+        <briefdescription>
+<para>Addresses of the left branch. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/AlexLnv/source/repos/siaod_4/saiod_4/bts_head.h" line="21" column="13" bodyfile="C:/Users/AlexLnv/source/repos/siaod_4/saiod_4/bts_head.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_bin_tree_1a0e4176b4e20697275c7bad76155f0424" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_bin_tree" kindref="compound">BinTree</ref> *</type>
+        <definition>BinTree* BinTree::right</definition>
+        <argsstring></argsstring>
+        <name>right</name>
+        <qualifiedname>BinTree::right</qualifiedname>
+        <briefdescription>
+<para>Addresses of the right branch. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/AlexLnv/source/repos/siaod_4/saiod_4/bts_head.h" line="23" column="13" bodyfile="C:/Users/AlexLnv/source/repos/siaod_4/saiod_4/bts_head.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure of the Binary Search Tree  </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>BinTree</label>
+        <link refid="struct_bin_tree"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>left</edgelabel>
+          <edgelabel>right</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/AlexLnv/source/repos/siaod_4/saiod_4/bts_head.h" line="17" column="1" bodyfile="C:/Users/AlexLnv/source/repos/siaod_4/saiod_4/bts_head.h" bodystart="17" bodyend="24"/>
+    <listofallmembers>
+      <member refid="struct_bin_tree_1a2d58ebfa880daae7744565d0d8051c85" prot="public" virt="non-virtual"><scope>BinTree</scope><name>left</name></member>
+      <member refid="struct_bin_tree_1a0e4176b4e20697275c7bad76155f0424" prot="public" virt="non-virtual"><scope>BinTree</scope><name>right</name></member>
+      <member refid="struct_bin_tree_1aec5735542d719d0a3693fb76d49daaa8" prot="public" virt="non-virtual"><scope>BinTree</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
