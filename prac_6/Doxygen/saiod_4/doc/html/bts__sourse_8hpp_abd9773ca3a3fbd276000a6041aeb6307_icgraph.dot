@@ -1,0 +1,15 @@
+digraph "main_summ"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [label="main_summ",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Auxiliary variable storage function."];
+  Node1 -> Node2 [dir="back",color="steelblue1",style="solid"];
+  Node2 [label="ReverseBypass_count",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$bts__sourse_8hpp.html#aad9b03133e03d17935569dbd667c8fba",tooltip="Function to calculate the sum of values in leaves using reverse tree traversal."];
+  Node2 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node3 [label="main",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$saiod__4_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4",tooltip="Main function."];
+  Node3 -> Node3 [dir="back",color="steelblue1",style="solid"];
+  Node2 -> Node2 [dir="back",color="steelblue1",style="solid"];
+}
