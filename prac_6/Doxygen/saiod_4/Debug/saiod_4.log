@@ -1,0 +1,3 @@
+﻿  saiod_4.cpp
+C:\Users\AlexLnv\source\repos\siaod_4\saiod_4\bts_sourse.hpp(109): warning C4715: ReverseBypass_count: значение возвращается не при всех путях выполнения
+  saiod_4.vcxproj -> C:\Users\AlexLnv\source\repos\siaod_4\saiod_4\Debug\saiod_4.exe
